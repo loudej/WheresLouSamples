@@ -1,0 +1,7 @@
+{
+    "dependencies":{
+        "Microsoft.Framework.ConfigurationModel": "0.1-*",
+        "Microsoft.Framework.ConfigurationModel.Json": "0.1-*",
+        "Microsoft.Framework.ConfigurationModel.Xml": "0.1-*"
+    }
+}
