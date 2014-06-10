@@ -105,7 +105,7 @@ namespace MyApp
             // pass control to following components
             await _next(env);
 
-            var responseStatusCode = (string)env["owin.ResponseStatusCode"];
+            var responseStatusCode = (int)env["owin.ResponseStatusCode"];
 
             // call is unwinding
             Console.WriteLine(string.Format(
