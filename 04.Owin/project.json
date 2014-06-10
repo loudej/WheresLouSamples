@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "Microsoft.AspNet.Server.WebListener": "0.1-alpha-*",
+        "Microsoft.AspNet.Owin": "0.1-alpha-*"
+    },
+    "commands":{
+        "web" : "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5000/"
+    }
+}
