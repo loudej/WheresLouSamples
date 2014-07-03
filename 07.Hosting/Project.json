@@ -1,0 +1,13 @@
+{
+    "dependencies": {
+        "Microsoft.AspNet.Server.WebListener": "1.0.0-*",
+        "Microsoft.AspNet.Server.IIS": "1.0.0-*",
+        "Kestrel": "1.0.0-*",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-*",
+        "Microsoft.AspNet.WebSockets.Middleware": "1.0.0-*"
+    },
+    "commands": {
+        "run": "Microsoft.AspNet.Hosting",
+        "web": "Microsoft.AspNet.Hosting"
+    }
+}
