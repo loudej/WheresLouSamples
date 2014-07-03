@@ -24,6 +24,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="go.cmd" />
+    <Content Include="Microsoft.AspNet.Hosting.ini" />
     <Content Include="Project.json" />
   </ItemGroup>
   <ItemGroup>
