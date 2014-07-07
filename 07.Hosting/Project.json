@@ -4,7 +4,7 @@
         "Microsoft.AspNet.Server.IIS": "1.0.0-*",
         "Kestrel": "1.0.0-*",
         "Microsoft.AspNet.StaticFiles": "1.0.0-*",
-        "Microsoft.AspNet.WebSockets.Middleware": "1.0.0-*"
+        "Microsoft.AspNet.WebSockets.Server": "1.0.0-*"
     },
     "commands": {
         "run": "Microsoft.AspNet.Hosting",
