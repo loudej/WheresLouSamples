@@ -12,6 +12,11 @@ namespace WheresLouSamples
 {
     public class Startup
     {
+        /* workaround the fact that mono and ms clr define this enum differently :( */
+        static WebSocketMessageType MessageType_Text = (WebSocketMessageType)0;
+        static WebSocketMessageType MessageType_Binary = (WebSocketMessageType)1;
+        static WebSocketMessageType MessageType_Close = (WebSocketMessageType)2;
+
         public void Configure(IBuilder app)
         {
             // serve static files from public subfolder
@@ -48,7 +53,7 @@ namespace WheresLouSamples
             {
                 // spin on receiving
                 var result = await webSocket.ReceiveAsync(buffer, CancellationToken.None);
-                if (result.MessageType == WebSocketMessageType.Close)
+                if (result.MessageType == MessageType_Close)
                 {
                     // break out when the client goes away
                     return;
@@ -61,7 +66,7 @@ namespace WheresLouSamples
                     var nowBytes = Encoding.UTF8.GetBytes(nowText);
                     await webSocket.SendAsync(
                         new ArraySegment<byte>(nowBytes),
-                        WebSocketMessageType.Text,
+                        MessageType_Text,
                         true,
                         CancellationToken.None);
                 }
