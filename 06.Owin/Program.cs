@@ -22,6 +22,7 @@ namespace MyApp
           Func<IDictionary<string, object>, Task>,
           Func<IDictionary<string, object>, Task>
         >>;
+    using Microsoft.AspNet.Http;
 
     public class Program  
     {
